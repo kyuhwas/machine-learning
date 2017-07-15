@@ -6,7 +6,7 @@
 가설함수 h(x)의 feature를 임의의 n까지로 일반화한다  
 모든 파라미터 theta의 묶음을 벡터로 만들어 벡터 theta라고 한다  
 모든 x(n)들을 모아 벡터로 만들어 벡터 x라 한다  
-이것을 theta’ * X 라는 행렬식으로 간단히 나타낸다
+이것을 theta’ * X 라는 행렬식으로 간단히 나타낸다  
 ![1](1.png)
 
 ## gradient descent 식 일반화
@@ -23,7 +23,7 @@ gradient descent 시 속도를 올려준다
 feature scaling: 변수를 변수의 범위(변수 최댓값 - 최솟값)으로 나눈다.  
 mean normalization: 변수의 평균을 뺀다
 
-![3](3.png)
+![3](3.png)  
 (변수 - 평균) / 범위
 
 ## learning rate
