@@ -1,39 +1,27 @@
 function [theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters)
-%GRADIENTDESCENTMULTI Performs gradient descent to learn theta
+% X, y는 트레이닝셋
 %   theta = GRADIENTDESCENTMULTI(x, y, theta, alpha, num_iters) updates theta by
 %   taking num_iters gradient steps with learning rate alpha
 
-% Initialize some useful values
-m = length(y); % number of training examples
+% 트레이닝 셋의 갯수
+m = length(y);
+
+% 반복 횟수에 따른 비용 함수의 변화
 J_history = zeros(num_iters, 1);
 
 for iter = 1:num_iters
 
-    % ====================== YOUR CODE HERE ======================
-    % Instructions: Perform a single gradient step on the parameter vector
-    %               theta. 
-    %
-    % Hint: While debugging, it can be useful to print out the values
-    %       of the cost function (computeCostMulti) and gradient here.
-    %
+    % gradient descent 함수 적용
     temp = theta -1 * alpha / m * (X' * (X * theta - y));
+    
+    % 세타가 convergen이면 루프 탈출
     if theta == temp
         break;
     endif
+                                   
     theta = temp;
 
-
-
-
-
-
-
-
-
-
-    % ============================================================
-
-    % Save the cost J in every iteration    
+    % 비용함수 계산
     J_history(iter) = computeCostMulti(X, y, theta);
 
 end
