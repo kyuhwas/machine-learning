@@ -3,3 +3,4 @@
 
 ### [WEEK1. Intro](/week1/summary1.md)
 ### [WEEK2. Linear Regression with Multiple Variables](/week2/summary2.md)
+### [WEEK3. Logistic Regression](/week3/summary3.md)
