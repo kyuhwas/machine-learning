@@ -42,10 +42,10 @@ h(x) = 1 일 때 무한대로 발산한다
 ![cost](cost.png)
 
 ### 식으로 정리
-![cost expression](cost expression.png)
+![cost expression](cost_expression.png)
 
 * 이를 이용한 비용함수  
-![cost function](cost function.png)
+![cost function](cost_function.png)
 
 * 비용함수를 각 파라미터 theta로 편미분한 Gradient Descent  
-![gradient descent](gradient descent.png)
+![gradient descent](gradient_descent.png)
