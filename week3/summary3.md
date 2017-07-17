@@ -34,18 +34,18 @@ h(x) = 0 일 때 무한대로 발산한다
 ![y=1](y=1.png)  
 
 * y = 0 cost 그래프  
-h(x) = 1 일 때 무한대로 발산한다
+h(x) = 1 일 때 무한대로 발산한다  
 ![y=0](y=0.png)
 
 
 * 정리  
 ![cost](cost.png)
 
-###식으로 정리
+### 식으로 정리
 ![cost expression](cost expression.png)
 
-* 이를 이용한 비용함수
+* 이를 이용한 비용함수  
 ![cost function](cost function.png)
 
-* 비용함수를 각 파라미터 theta로 편미분한 Gradient Descent
+* 비용함수를 각 파라미터 theta로 편미분한 Gradient Descent  
 ![gradient descent](gradient descent.png)

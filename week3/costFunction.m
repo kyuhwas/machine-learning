@@ -4,24 +4,22 @@ function [J, grad] = costFunction(theta, X, y)
 %   parameter for logistic regression and the gradient of the cost
 %   w.r.t. to the parameters.
 
-% Initialize some useful values
-m = length(y); % number of training examples
+% 트레이닝 셋의 갯수
+m = length(y);
 
-% You need to return the following variables correctly 
+% cost
 J = 0;
+
+% 각 theta 별 편미분 값
 grad = zeros(size(theta));
 
-% ====================== YOUR CODE HERE ======================
-% Instructions: Compute the cost of a particular choice of theta.
-%               You should set J to the cost.
-%               Compute the partial derivatives and set grad to the partial
-%               derivatives of the cost w.r.t. each parameter in theta
-%
-% Note: grad should have the same dimensions as theta
-%
+% 각 feature와 트레이닝 셋을 곱한 후 sigmoid 함수에 넣어 나오는 값
 sig = sigmoid(X * theta);
+
+% 단순히 cost function에 앞에서 구한 값을 대입함
 J = ((-y)' * log(sig) + (-1 + y)' * log(1 - sig)) / m
 
+% theta 별 편미분 값
 grad = (X' * (sig - y)) / m
 
 
