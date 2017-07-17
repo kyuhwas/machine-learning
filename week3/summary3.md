@@ -25,4 +25,27 @@ sigmoid에서 나온 값을 가지고 1과 0으로 분류하기 위해 아래와
 ![boundary](boundary.png)  
 위와 같은 예시가 있을 때 boundary는 x1 = 5 직선을 기준으로 나뉘어진다
 
-## Cost Function
+## Cost Function and Gradient Descent
+분류 문제에서 cost는 y = 1 일 때 y = 0 일 때 다르게 나타난다  
+![each cost](each cost.png)  
+
+* y = 1 cost 그래프  
+h(x) = 0 일 때 무한대로 발산한다  
+![y=1](y=1.png)  
+
+* y = 0 cost 그래프  
+h(x) = 1 일 때 무한대로 발산한다
+![y=0](y=0.png)
+
+
+* 정리  
+![cost](cost.png)
+
+###식으로 정리
+![cost expression](cost expression.png)
+
+* 이를 이용한 비용함수
+![cost function](cost function.png)
+
+* 비용함수를 각 파라미터 theta로 편미분한 Gradient Descent
+![gradient descent](gradient descent.png)
