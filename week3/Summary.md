@@ -50,7 +50,7 @@ h(x) = 1 일 때 무한대로 발산한다
 * 비용함수를 각 파라미터 theta로 편미분한 Gradient Descent  
 ![gradient descent](images/gradient_descent.png)
 
-##Multiclass Classification
+## Multiclass Classification
 클래스가 세개 이상일 때, 세 가지 이상의 종류로 분류해야할 때
 
 '분류 대상 데이터 vs 나머지'로 구분해서 각 데이터 별로 logistic regression을 학습시킨다  
@@ -60,3 +60,5 @@ h(x) = 1 일 때 무한대로 발산한다
 클래스 별로 존재하는 모든 classifier에 그 데이터를 입력해서 가장 큰 결과값을 선택한다  
 가장 큰 결과값 y는 클래스에 속할 확률이 가장 크다는 것을 뜻하므로 데이터가 해당 클래스에 속한다고 볼 수 있다  
 ![multiclass_find](images/multiclass_find.png)
+
+## Regularization
