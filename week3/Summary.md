@@ -62,3 +62,42 @@ h(x) = 1 일 때 무한대로 발산한다
 ![multiclass_find](images/multiclass_find.png)
 
 ## Regularization
+* 1차 함수로 나타낸 직선 그래프는 데이터에 맞지 않는다(왼쪽)  
+* x*2 feature를 하나 더하면 좀 더 데이터에 맞게 그래프가 그려진다(중간)  
+* 하지만 feature가 많아 질 수록 더 fit한 그래프가 나오는 것은 아니다  
+5차함수로 나타낸 그래프는(오른쪽) 데이터에 딱 맞게 그려지지만 미래의 데이터를 잘 예측하는 그래프는 아니다
+![overfitting](images/overfitting.png)  
+
+#### 왼쪽 그래프처럼 트레이닝 데이터에 fit 하지 않아 데이터를 예측할 수 없는 상태를 underfitting이라고 한다
+
+#### 오른쪽 그래프처럼 트레이닝 데이터에 너무 딱 맞게 그려져 데이터를 예측할 수 없는 상태를 overfitting이라고 한다
+
+underfitting(high bias)는 너무 단순한 함수 또는 너무 적은 feature 갯수 때문에 발생한다  
+
+overfitting(high variance)는 너무 복잡한 함수 또는 너무 많은 feature 갯수 때문에 발생한다  
+
+Bias와 Variance는 반대관계이다  
+
+### Overfitting을 없애기 위해서  
+
+* feature의 갯수를 줄인다
+* Regularization을 한다
+
+### Regularization
+비용함수를 계산할 때 feature에 penalty를 줘서 값을 낮춰주면 overfitting이 해결된다  
+![penalty](images/penalty.png)
+
+위의 예시에서는 theta중 두 개에만 regularization을 했지만 모든 파라미터에 regularization을 할 수 있다  
+![regular](images/regular.png)
+
+### Regularized Linear Regression
+
+#### Gradient Descent
+![regularized linear regression](images/rgd.png)
+
+#### Normal Equation
+![normal equation](images/equation.png)
+
+### Regularized Logistic Regression
+
+![Regularized Logistic Regression](images/lr.png)
